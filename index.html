@@ -15,5 +15,17 @@
       </select>
       <input type="submit">
     </form>
+    <br><br><br>
+    <form name="valform" action="" method="POST">
+      Credit Card Validation: <input type="text" id="cctextboxid" name="cctextbox"><br/>
+      Card Type: <select name="cardtype" id="cardtypeid">
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="discover">Discover</option>
+        <option value="amex">Amex</option>
+        <option value="diners">Diners Club</option>
+      </select><br/>
+      <input type="button" name="submit" value="Verify Credit Card" onclick="isValidCreditCard(document.getElementById('cctextboxid').value,document.getElementById('cardtypeid').value)" />
+
   </body>
 </html>
