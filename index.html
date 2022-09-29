@@ -1,31 +1,29 @@
 <!doctype html>
 <html>
   <head>
-  	<title>Test 1 </title>
+  	<title>Test 1</title>
   </head>
 
   <body>
-  	<form action="/main.js">
-      <label for="cars">Choose a class:</label>
-      <select id="cars" name="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
-      </select>
-      <input type="submit">
-    </form>
-    <br><br><br>
-    <form name="valform" action="" method="POST">
-      Credit Card Validation: <input type="text" id="cctextboxid" name="cctextbox"><br/>
-      Card Type: <select name="cardtype" id="cardtypeid">
-        <option value="visa">Visa</option>
-        <option value="mastercard">MasterCard</option>
-        <option value="discover">Discover</option>
-        <option value="amex">Amex</option>
-        <option value="diners">Diners Club</option>
-      </select><br/>
-      <input type="button" name="submit" value="Verify Credit Card" onclick="isValidCreditCard(document.getElementById('cctextboxid').value,document.getElementById('cardtypeid').value)" />
 
+    <form>
+      <label for="Classe">Classe:</label>
+      <select name="Classe" id="Classe">
+        <option value="0">I SD</option>
+        <option value="1">II SD</option>
+        <option value="2">III SD</option>
+      </select>
+    </form><br>
+    <button onclick="ScegliClasse()">Invia</button><br><br>
+
+    <form id="form">
+      <label for="Assenti">Professori assenti: (selezionare gli assenti)</label>
+
+      <div id="divv"></div>
+    </form><br>
+
+    <button onclick="Controlla()">Controlla</button>
+    
+    <script src="script.js"></script>
   </body>
 </html>
