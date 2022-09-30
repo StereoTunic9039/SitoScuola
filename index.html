@@ -2,28 +2,43 @@
 <html>
   <head>
   	<title>Test 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
 
   <body>
-
-    <form>
-      <label for="Classe">Classe:</label>
-      <select name="Classe" id="Classe">
-        <option value="0">I SD</option>
-        <option value="1">II SD</option>
-        <option value="2">III SD</option>
-      </select>
-    </form><br>
-    <button onclick="ScegliClasse()">Invia</button><br><br>
-
-    <form id="form">
-      <label for="Assenti">Professori assenti: (selezionare gli assenti)</label>
-
-      <div id="divv"></div>
-    </form><br>
-
-    <button onclick="Controlla()">Controlla</button>
     
+    <div id="Page">
+      <div id="FormClass">
+        <div id="FormClassQuestion">
+          <form>
+            <label for="Classe" id="label">Classe:</label>
+            <select name="Classe" id="Classe">
+              <option value="0">I SD</option>
+              <option value="1">II SD</option>
+              <option value="2">III SD</option>
+            </select>
+          </form><br>
+        </div>
+        <div id="FormClassSubmit">
+          <button onclick="ScegliClasse()">Invia</button><br><br>
+        </div>
+      </div>
+
+      <div id="FormProfs">
+        <div id="FormProfsCheck">
+          <form id="form">
+            <label for="Assenti">Professori assenti: (selezionare gli assenti)</label>
+
+            <div id="divv"></div>
+          </form><br>
+        </div>
+
+        <div id="FormProfsSubmit">
+          <button onclick="Controlla()">Controlla</button>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
